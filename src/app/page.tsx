@@ -1,17 +1,15 @@
-import Navibar from "./components/Navibar";
-import Image from "next/image";
+import Navibar from './components/Navbar'
+import Image from 'next/image'
 
-import Footer from "./components/Footer";
-import Link from "next/link";
-import Hero from "./section/hero";
-import Goal from "./section/goal";
-import Feature from "./section/feature";
-import Partner from "./section/partner";
-import Team from "./section/team";
-
+import Footer from './components/Footer'
+import Link from 'next/link'
+import Hero from './section/hero'
+import Goal from './section/goal'
+import Feature from './section/feature'
+import Partner from './section/partner'
+import Team from './section/team'
 
 export default function Home() {
-
   return (
     <div className="bg-white">
       <header className="sticky inset-x-0 top-0 z-50 flex justify-center">
@@ -48,7 +46,7 @@ export default function Home() {
         </div>
         <Goal />
         <Feature />
-        <Partner  />
+        <Partner />
         <Team />
       </div>
       <Footer />

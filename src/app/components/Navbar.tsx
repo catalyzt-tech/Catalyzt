@@ -1,9 +1,9 @@
-"use client";
+'use client'
 
-import type {NavbarProps} from "@nextui-org/react";
-import Image from "next/image";
+import type { NavbarProps } from '@nextui-org/react'
+import Image from 'next/image'
 
-import React from "react";
+import React from 'react'
 import {
   Navbar,
   NavbarBrand,
@@ -14,24 +14,18 @@ import {
   NavbarMenuToggle,
   Link,
   Button,
-} from "@nextui-org/react";
+} from '@nextui-org/react'
 
-
-const menuItems = [
-  "Home",
-  "Product",
-  "About",
-  "Feedback",
-];
+const menuItems = ['Home', 'Product', 'About']
 
 export default function Navibar(props: NavbarProps) {
   return (
     <Navbar
       {...props}
       classNames={{
-        base: "py-4 backdrop-filter-none bg-transparent",
-        wrapper: "px-0 w-full justify-center bg-transparent",
-        item: "hidden md:flex",
+        base: 'py-4 backdrop-filter-none bg-transparent',
+        wrapper: 'px-0 w-full justify-center bg-transparent',
+        item: 'hidden md:flex',
       }}
       height="54px"
     >
@@ -46,9 +40,14 @@ export default function Navibar(props: NavbarProps) {
         <NavbarBrand className="mr-2 w-[40vw] md:w-auto md:max-w-fit">
           <div className="rounded-full bg-foreground text-background">
             {/* icon */}
-            <Image src="assets/brand/catalyzt.svg" alt="logo" width={40} height={40} />
+            <Image
+              src="assets/brand/catalyzt.svg"
+              alt="logo"
+              width={40}
+              height={40}
+            />
           </div>
-          <span className="ml-2 font-medium md:hidden">ACME</span>
+          {/* <span className="ml-2 font-medium md:hidden">ACME</span> */}
         </NavbarBrand>
 
         {/* Items */}
@@ -68,9 +67,11 @@ export default function Navibar(props: NavbarProps) {
           </Link>
         </NavbarItem>
         <NavbarItem className="ml-2 !flex">
-          <Button radius="full" variant="flat">
-            Contact Us
-          </Button>
+          <a href="#contact-us">
+            <Button radius="full" variant="flat">
+              Contact Us
+            </Button>
+          </a>
         </NavbarItem>
       </NavbarContent>
 
@@ -78,11 +79,11 @@ export default function Navibar(props: NavbarProps) {
       <NavbarMenu
         className="top-[calc(var(--navbar-height)/2)] mx-auto mt-16 max-h-[22vh] max-w-[80vw] rounded-large border-small border-default-200/20 bg-background/60 py-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
         motionProps={{
-          initial: {opacity: 0, y: -20},
-          animate: {opacity: 1, y: 0},
-          exit: {opacity: 0, y: -20},
+          initial: { opacity: 0, y: -20 },
+          animate: { opacity: 1, y: 0 },
+          exit: { opacity: 0, y: -20 },
           transition: {
-            ease: "easeInOut",
+            ease: 'easeInOut',
             duration: 0.2,
           },
         }}
@@ -96,5 +97,5 @@ export default function Navibar(props: NavbarProps) {
         ))}
       </NavbarMenu>
     </Navbar>
-  );
+  )
 }
