@@ -2,7 +2,6 @@
 
 import type { NavbarProps } from '@nextui-org/react'
 import Image from 'next/image'
-
 import React from 'react'
 import {
   Navbar,
@@ -15,9 +14,7 @@ import {
   Link,
   Button,
 } from '@nextui-org/react'
-
-const menuItems = ['Home', 'Product', 'About']
-
+export const menuItems = ['Home', 'Product', 'About']
 export default function Navibar(props: NavbarProps) {
   return (
     <Navbar
