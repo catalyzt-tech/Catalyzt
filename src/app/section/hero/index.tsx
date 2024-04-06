@@ -11,7 +11,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight py-4 text-gray-900 sm:text-6xl">
+            <h1 className="lg:text-4xl font-bold tracking-tight py-4 text-gray-900 text-5xl">
               Empowering the web3 through contributions
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">

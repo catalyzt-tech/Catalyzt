@@ -9,12 +9,12 @@ const Partner = () => {
         </h2>
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <Link
-            className="hover:scale-105 transition ease-in-out duration-200"
+            className="hover:scale-105 transition ease-in-out duration-200 col-span-2 lg:col-span-1"
             href="https://www.curiahub.xyz/"
             target="_blank"
           >
             <Image
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              className=" max-h-12 w-full object-contain"
               src="/assets/partner/curia-banner.svg"
               alt="curia-lab"
               width={158}
@@ -22,12 +22,12 @@ const Partner = () => {
             />
           </Link>
           <Link
-            className="hover:scale-105 transition ease-in-out duration-200"
+            className="hover:scale-105 transition ease-in-out duration-200 col-span-2 lg:col-span-1"
             href="https://optimism.io/"
             target="_blank"
           >
             <Image
-              className="col-span-2 max-h-8 w-full object-contain lg:col-span-1"
+              className="max-h-8 w-full object-contain"
               src="/assets/partner/optimism-banner.svg"
               alt="optimism"
               width={158}
@@ -35,12 +35,12 @@ const Partner = () => {
             />
           </Link>
           <Link
-            className="hover:scale-105 transition ease-in-out duration-200"
+            className="hover:scale-105 transition ease-in-out duration-200 col-span-2 lg:col-span-1"
             href="https://www.opensource.observer/"
             target="_blank"
           >
             <Image
-              className="col-span-2 max-h-28 w-full object-contain lg:col-span-1"
+              className="max-h-28 w-full object-contain"
               src="/assets/partner/oso-banner.svg"
               alt="opensource-observer"
               width={158}

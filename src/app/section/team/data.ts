@@ -7,7 +7,7 @@ export const people = [
   },
   {
     name: 'wit03.eth',
-    role: 'Co-Founder / CT/PO',
+    role: 'Co-Founder / CT-PO',
     imageUrl: '/assets/team/wit03.png',
     contact: 'https://twitter.com/witjarukit',
   },
