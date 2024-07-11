@@ -1,7 +1,7 @@
 export const people = [
   {
     name: 'Billy191.eth',
-    role: 'Founder / CEO',
+    role: 'Co-Founder / CEO',
     imageUrl: '/assets/team/billy191.jpg',
     contact: 'https://twitter.com/billy191',
   },
